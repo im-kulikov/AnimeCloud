@@ -1,0 +1,160 @@
+/*====================================
+   Основные стили
+====================================*/
+html{
+    height: 100%;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+    background: #131212;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/*====================================
+   Шапка Сайта
+====================================*/
+.header {
+    background: #0F0F0F;
+    min-height: 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+.search__input {
+    display: block;
+    max-width: 564px;
+    height: 37.85px;
+    width: 564px;
+    background: #202020;
+    border: none;
+    border-radius: 50px;
+    padding-left: 20px;
+}
+.user {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.user__avatar {
+    margin-right: 10px;
+}
+.user__menu-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+.anime__card {
+    height: 330px;
+    position: relative;
+    margin-bottom: 150px;
+}
+.card__img {
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.anime__card {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 50px;
+}
+.card__body {
+    max-width: 250px;
+    text-align: center;
+}
+.card__title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.card__original {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    color: #9F9F9F;
+    margin: 0;
+    padding: 0;
+}
+.card__series {
+    bottom: 5px;
+    right: 0;
+    position: absolute;
+    color: #ffffff;
+    background: #006DD1;
+    padding: 10px 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+.card__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.content {
+    min-height: 130vh;
+}
+.views> .btn__blue {
+    display: none;
+}
+.btn__blue {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background: #006DD1;
+}
+.col-md-4 {
+    margin-right: 20px;
+}
+.col-md-8 {
+    margin-top: 80px;
+}
+
+
+
+
+
+
+
+.player {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+}

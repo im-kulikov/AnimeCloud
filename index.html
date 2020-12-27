@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>AnimeCloud</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./components/css/normalize.css">  
+        <link rel="stylesheet" href="./components/css/main.css">      
+    </head>
+    <body>
+
+        <!--Шапка Сайта-->
+        <header class="header">
+            <div class="container">
+                <nav class="navigation">
+                    <a href="." class="logo">
+                        <img src="./components/img/logo.svg" alt="AnimeCloud" class="logo__img">
+                    </a>
+                    <form action="." class="search">
+                        <input type="text" class="search__input" placeholder="Поиск..." type="search"  name="search">
+                    </form>
+                    <ul class="user">
+                        <li class="user__avatar">
+                            <img src="./components/img/user.svg" alt="avatar" class="avatar__img" width="30" height="30">
+                        </li>
+                        <li class="user__menu">
+                            <a href="#" class="user__menu-link">Войти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--/Шапка Сайта-->
+<div class="content">
+    <div class="container">
+        <div id="view"></div>
+        <!--<button type="button" class="btn btn__blue" onclick="{loadPage();}">Загрузить больше</button>-->
+    </div>
+</div>
+
+
+        
+</body>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./vendor/playerjs.js"></script>
+    <script src="./components/api/uibuilder.jsx" type="text/babel"></script>
+    <script src="./components/api/api.js"></script>
+    <script src="./components/api/timer.js"></script>
+    <script>
+        loadPage();
+    </script>
+</html>

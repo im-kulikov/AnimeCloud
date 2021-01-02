@@ -31,6 +31,7 @@ function SetTitle() {
                     <div id="web-player" class="player"></div>
             </div>
         </div>,
+
         document.getElementById("view")
     );
 
@@ -40,7 +41,7 @@ function SetTitle() {
 // MARK: - Рендеринг Элементов Списка
 
 function RenderList() {
-    
+    const btnmore = <button type="button" class="btn btn__blue" onClick={() =>{loadPage()}}>Загрузить больше</button>
     ReactDOM.render(
         <div class="anime__list">
                 {lastTitles.map((val, index) =>{
@@ -51,18 +52,19 @@ function RenderList() {
 
                     return <TitleCard link={link} title={name} original={originalName} series={series} image={val.urlImagePreview}></TitleCard>
                 })}
-                { () => {
-                    if (getPageType() == "last") {
-                        return <button type="button" class="btn btn__blue" onclick={loadPage()}>Загрузить больше</button>
-                    }
-                    return
-                }  
-                }
         </div>,
         document.getElementById("view")
         
+    );
+    ReactDOM.render(
+        btnmore,
+        document.getElementById('btn')
     )
+   
+
+
 }
+
 function TitleCard(props) {
     return <div class="anime__card">
         <a href={props.link}>

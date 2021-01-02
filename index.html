@@ -36,13 +36,15 @@
 <div class="content">
     <div class="container">
         <div id="view"></div>
-        <!--<button type="button" class="btn btn__blue" onclick="{loadPage();}">Загрузить больше</button>-->
+        <div id="btn"></div>
     </div>
+    <a href="#" id="scroll_top" title="Наверх"></a>
 </div>
 
 
         
 </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
@@ -51,6 +53,22 @@
     <script src="./components/api/uibuilder.jsx" type="text/babel"></script>
     <script src="./components/api/api.js"></script>
     <script src="./components/api/timer.js"></script>
+    <script>
+     $(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 100) {
+			$('#scroll_top').show();
+		} else {
+			$('#scroll_top').hide();
+		}
+	});
+ 
+	$('#scroll_top').click(function(){
+		$('html, body').animate({scrollTop: 0}, 600);
+		return false;
+	});
+});
+    </script>
     <script>
         loadPage();
     </script>

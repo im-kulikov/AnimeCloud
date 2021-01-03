@@ -49,11 +49,15 @@ a:hover {
     justify-content: space-between;
     padding-top: 5px;
 }
+.search {
+    max-width: 564px;
+    width: 100%;
+}
 .search__input {
     display: block;
     max-width: 564px;
     height: 37.85px;
-    width: 564px;
+    width: 100%;
     background: #202020;
     border: none;
     border-radius: 50px;
@@ -181,4 +185,44 @@ a:hover {
 }
 #scroll_top:hover {
  	opacity: 1;
+}
+@media(max-width: 425px ) {
+    .navigation {
+        flex-direction: column;
+    }
+    .search {
+        max-width: 364px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .user {
+        margin-bottom: 10px;
+    }
+    .anime__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .anime__card {
+        margin-right: 0;
+    }
+    #btn {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .card__full {
+        margin: 0 10px;
+    }
+    .card__flex {
+        flex-direction: column;
+    }
+    .col-md-8 {
+        margin-top: 0;
+    }
+}
+@media(max-width: 375px )  {
+    .search {
+        max-width: 300px;
+    }
 }

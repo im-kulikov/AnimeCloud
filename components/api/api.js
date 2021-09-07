@@ -33,7 +33,7 @@ function loadPlaylist() {
 
     var req = new XMLHttpRequest();
 
-    req.open("POST", "http://api.animevost.org/v1/playlist", true);
+    req.open("POST", "https://api.animevost.kulikov.im/v1/playlist", true);
     req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); 
     
     req.onload = function() {
@@ -53,7 +53,7 @@ function loadOneTitle() {
 
     var req = new XMLHttpRequest();
 
-    req.open("POST", "http://api.animevost.org/v1/info", true);
+    req.open("POST", "https://api.animevost.kulikov.im/v1/info", true);
     req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); 
     
     req.onload = function() {
@@ -70,7 +70,7 @@ function loadOneTitle() {
 function loadLastTitles() {
     var req = new XMLHttpRequest();
     
-    req.open("GET", "http://api.animevost.org/v1/last?page=" + (lastTitles.length / 20 + 1) + "&quantity=20", true);
+    req.open("GET", "https://api.animevost.kulikov.im/v1/last?page=" + (lastTitles.length / 20 + 1) + "&quantity=20", true);
 
     req.onload = function() {
         unpackLastTitles(req.response);
@@ -88,7 +88,7 @@ function loadSearchTitles() {
 
     var req = new XMLHttpRequest();
     
-    req.open("POST", "http://api.animevost.org/v1/search", true);
+    req.open("POST", "https://api.animevost.kulikov.im", true);
     req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); 
 
     req.onload = function() {

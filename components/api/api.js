@@ -88,7 +88,7 @@ function loadSearchTitles() {
 
     var req = new XMLHttpRequest();
     
-    req.open("POST", "https://api.animevost.kulikov.im/search", true);
+    req.open("POST", "https://api.animevost.kulikov.im/v1/search", true);
     req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); 
 
     req.onload = function() {

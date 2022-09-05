@@ -84,7 +84,7 @@ function loadLastTitles() {
 }
 
 function loadSearchTitles() {
-    let body = "text=" + encodeURIComponent(getParameterByName('search')); 
+    let body = "name=" + encodeURIComponent(getParameterByName('search')); 
 
     var req = new XMLHttpRequest();
     

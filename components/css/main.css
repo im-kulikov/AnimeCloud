@@ -186,7 +186,13 @@ a:hover {
 #scroll_top:hover {
  	opacity: 1;
 }
-@media(max-width: 425px ) {
+
+.header .navigation .user
+{
+    display: none;
+}
+
+@media(max-width: 430px ) {
     .navigation {
         flex-direction: column;
     }
@@ -219,6 +225,18 @@ a:hover {
     }
     .col-md-8 {
         margin-top: 0;
+    }
+
+    .col-md-4, .col-md-8
+    {
+        margin: 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .col-md-4 img
+    {
+        width: 100%;
     }
 }
 @media(max-width: 375px )  {

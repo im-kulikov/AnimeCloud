@@ -140,6 +140,14 @@ function seriesFromTitle(name) {
     return second[1].substring(0, second[1].length - 1)
 }
 
+function nextSeriesFromTitle(name) {
+    let first = name.split(" /");
+    let second = first[1].split(" [");
+    if (second.length < 3) {
+        return ''
+    }
+    return second[2].substring(0, second[2].length - 1)
+}
 
 // MARK: - Работа с плеером
 

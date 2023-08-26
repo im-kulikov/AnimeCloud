@@ -6,6 +6,7 @@ function SetTitle() {
     let name = titleName(lastTitles[0].title);
     let origName = titleOriginalName(lastTitles[0].title);
     let ep = seriesFromTitle(lastTitles[0].title);
+    let next = nextSeriesFromTitle(lastTitles[0].title)
 
     ReactDOM.render(
     <div class="card__full-n">
@@ -18,11 +19,15 @@ function SetTitle() {
                         </div>
                         <div class="col-md-8">
                             <div>
-                            <h5>Год выхода: <small>{title.year}</small></h5>
-                            <h5>Жанр: <small>{title.genre}</small></h5>
-                            <h5>Тип: <small>{title.type}</small></h5>
-                            <h5>Режиссер: <small>{title.director}</small></h5>
-                            <h5>Серии: <small>{ep}</small></h5>
+                                <h5>Год выхода: <small>{title.year}</small></h5>
+                                <h5>Жанр: <small>{title.genre}</small></h5>
+                                <h5>Тип: <small>{title.type}</small></h5>
+                                <h5>Режиссер: <small>{title.director}</small></h5>
+                                <h5>
+                                    Серии:
+                                    <small> {ep} </small>
+                                    <small> {next ? ' (' + next + ')' : ''} </small>
+                                </h5>
                                 <h5>Сюжет</h5>
                                 {lastTitles[0].description}
                             </div>
